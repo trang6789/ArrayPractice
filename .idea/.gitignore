@@ -1,2 +1,7 @@
 # Default ignored files
 /workspace.xml
+/uiDesigner.xml
+/misc.xml
+/vcs.xml
+/compiler.xml
+/.gitignore
