@@ -1,4 +1,4 @@
-package Array;
+package stringArray;
 
 public class NameGreeting {
     public static String helloName(String name) {
