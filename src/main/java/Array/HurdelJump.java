@@ -12,10 +12,9 @@ public class HurdelJump {
             if(hurdles[i]<=h){
                 temp = true;
             }
-            if(hurdles.length == 0){
-                temp = true;
-            }
-
+        }
+        if(hurdles.length == 0){
+            temp = true;
         }
         return temp;
     }
