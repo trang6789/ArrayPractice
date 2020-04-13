@@ -1,9 +1,9 @@
-package ArrayVerryEasy.Array;
+package ArrayVerryEasy.stringArray;
 
 public class HittingTheJackpot {
     public static boolean testJackpot(String[] result) {
-        for(int i=1; i<5; i++){
-            if(result[1].equals(result[0])&&result[2].equals(result[0])&&result[3].equals(result[0])&&result[4].equals(result[0])){
+        for(int i=0; i<4; i++){
+            if(result[1].equals(result[0])&&result[2].equals(result[0])&&result[3].equals(result[0])){
                 return true;
             }
             else
@@ -13,7 +13,7 @@ public class HittingTheJackpot {
     }
 
     public static void main(String[] args){
-        String[] result = {"abc", "abc", "abc", "bc"};
+        String[] result = {"karaoke", "karaoke", "karaoke", "karaoke"};
         System.out.println(testJackpot(result));
     }
 }
