@@ -2,17 +2,14 @@ package ArrayVerryEasy.stringArray;
 
 public class OwofiedASentence {
     public static String owofied(String sentence) {
-        String newString = "";
+        String newString = new String(sentence);
         for(int i = 0; i<sentence.length(); i++){
-            if(sentence.charAt(i) =='i'){
-                newString = String.valueOf(sentence.charAt(i));
-                //return newString + "wi";
-            }
-            if(sentence.charAt(i)=='e'){
-                return "we";
+            if(sentence.charAt(i) =='i'||sentence.charAt(i)=='e'){
+                newString = sentence.replaceAll("i","wi");
+                newString = newString.replaceAll("e","we");
             }
             if(i==sentence.length()-1){
-                return newString + "owo";
+                return newString + " owo";
             }
         }
         return newString;
